@@ -1,0 +1,16 @@
+---
+title: "Updated Confirmed Cases"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Updated Confirmed Cases}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+Calling deaths will return a data frame consisting of each countries' total death cases of COVID-19 by day
+
+
+```{r setup, message=F, warning=F}
+library(CoronaExtra)
+confirmed_cases <- C19Cases()
+head(confirmed_cases[, 1:7])
+```

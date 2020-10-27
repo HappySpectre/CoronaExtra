@@ -1,0 +1,58 @@
+---
+output: github_document
+---
+
+
+```{r, include = FALSE, message=F, warning=F}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# CoronaExtra
+
+The goal of CoronaExtra is to provide some geological and historical data regarding the spread of COVID-19 throughout the world
+
+## Installation
+
+You can install the released version of CoronaExtra from github with:
+
+``` {r inc, eval = FALSE, message=F, warning=F}
+install_github("HappySpectre/CoronaExtra")
+```
+
+## Example
+
+The following coed shows how to use the C19WorldMap and COVID19vsTime functions.
+
+```{r example1, message=F, warning=F}
+library(CoronaExtra)
+C19WorldMap(type = 1, date = "8/5/20")
+```
+
+
+```{r example2, message=F, warning=F}
+library(CoronaExtra)
+COVID19vsTime(Country = "Iran", Start = "2020-08-01", Stop = "2020-10-02")
+```
+
+
+```{r deathsimport, echo=F, message=F, warning=F}
+library(readr)
+url <- "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv"
+  death <- read_csv(url)
+```
+The data set used in this package as reference is provided by Johns Hopkins University and can be found at https://github.com/CSSEGISandData/COVID-19.
+
+```{r data, message=F, warning=F, echo=F}
+data <- head(as.data.frame(death[,2:8]))
+```
+
+
+```{r deaths, message=F, warning=F}
+head(data)
+```
+

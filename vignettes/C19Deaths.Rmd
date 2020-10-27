@@ -1,0 +1,21 @@
+---
+title: "C19Deaths"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Updated Death Cases}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+Calling deaths will return a data frame consisting of each countries' total death cases of COVID-19 by day
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup, message=F, warning=F}
+library(CoronaExtra)
+death <- C19Deaths()
+head(death[, 1:7])
+```

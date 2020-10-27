@@ -1,0 +1,17 @@
+Package: CoronaExtra
+Type: Package
+Title: An Informative package providing data regarding COVID-19
+Version: 0.1.0
+Author: Mehrzad Shadmangohar
+Maintainer: Mehrzad Shadmangohar <happyspiritmehrzad@gmail.com>
+Description: This package is created in order to automatically provide the most previous information about the COVID-19 pandemic in different countries around the world, and the progress of its spread since its first appearance in China untill the present day 
+License: MIT
+Encoding: UTF-8
+LazyData: TRUE
+Imports: ggplot2 (>= 3.3.2),
+         dplyr (>= 1.0.2),
+         rworldmap (>= 1.3-6),
+         lubridate (>= 1.7.9)
+Depends: knitr, rmarkdown
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
