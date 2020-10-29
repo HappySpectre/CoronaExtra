@@ -1,7 +1,7 @@
 
 # CoronaExtra
 
-The goal of CoronaExtra is to provide some geological and historical
+The goal of CoronaExtra is to provide some geological and historical <img src="man/figures/logo.png" align="right" width="120" />
 data regarding the spread of COVID-19 throughout the world
 
 ## Installation
