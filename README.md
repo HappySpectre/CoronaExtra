@@ -2,7 +2,7 @@
 # CoronaExtra
 
 The goal of CoronaExtra is to provide some geological and historical <img src="man/figures/logo.png" align="right" width="120" />
-data regarding the spread of COVID-19 throughout the world
+data regarding the spread of COVID-19 throughout the world. CoronaExtran also pays homage to Cervecería Modelo and all the businesses that suffered during this pandemic.
 
 ## Installation
 
