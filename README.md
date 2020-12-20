@@ -20,9 +20,6 @@ functions.
 ``` r
 library(CoronaExtra)
 C19WorldMap(type = 1, date = "8/5/20")
-#> 181 codes from your data successfully matched countries in the map
-#> 8 codes from your data failed to match with a country code in the map
-#> 62 codes from the map weren't represented in your data
 ```
 
 <img src="man/figures/README-example1-1.png" width="100%" />
