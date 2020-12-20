@@ -14,7 +14,7 @@ install_github("HappySpectre/CoronaExtra")
 
 ## Example
 
-The following coed shows how to use the C19WorldMap and COVID19vsTime
+The following code shows how to use the C19WorldMap and COVID19vsTime
 functions.
 
 ``` r
